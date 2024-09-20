@@ -2,6 +2,47 @@
 layout: default
 ---
 
+This project demonstrates **how to detect and investigate brute force and malware attacks** using a cloud-based environment. The project was hosted on **Vultr**, where I set up an `ELK stack (Elasticsearch, Logstash, Kibana)`, performed _attacks_, and configured automated _alerts_ and _dashboards_ to monitor activity.
+
+### Overview
+
+*   **Platform: Vultr (Cloud)**
+*   **Tools Used: ELK (Elasticsearch, Logstash, Kibana), Mythic C2, Sysmon, Ticketing System**
+*   **Key Skills: SIEM setup, log ingestion, threat detection, incident response, dashboard creation, alert configuration**
+
+# ELK Setup and Sysmon Log Ingestion
+
+ELK Stack Installation Confirmation, Sysmon Logs in Kibana, Logical Diagram
+
+## ELK Stack Installation Confirmation
+
+## Sysmon Logs in Kibana
+
+## Logical Diagram
+
+
+# Brute Force Attack Detection
+
+## Kibana Alerts for Brute Force Attacks
+
+## Brute Force Activity Dashboard in Kibana
+
+
+# Command and Control (C2) Attack Detection
+
+## Mythic C2 Server Setup
+
+## C2 Attack Logs in Kibana
+
+## Kibana Dashboard Visualizing C2 Activity
+
+
+# Ticketing System Integration
+
+## Ticket Creation from Kibana Alerts
+
+## Ticketing System Interface with Active Incident Tickets
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
