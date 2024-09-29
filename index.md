@@ -10,7 +10,7 @@ This project demonstrates **how to detect and investigate brute force and malwar
 *   **Tools Used: ELK (Elasticsearch, Logstash, Kibana), Mythic C2, Sysmon, Ticketing System**
 *   **Key Skills: SIEM setup, log ingestion, threat detection, incident response, dashboard creation, alert configuration**
 
-# [1. ELK Setup and Sysmon Log Ingestion](https://jeremiaheze.github.io/ELK.github.io/)
+# [1.ELK Setup and Sysmon Log Ingestion](https://jeremiaheze.github.io/ELK.github.io/)
 
 ## ELK Stack Installation Confirmation
 To set up the ELK stack, we installed Elasticsearch, Logstash, and Kibana on a Vultr server. These tools allow us to centralize, analyze, and visualize logs from multiple endpoints. Sysmon logs were collected to detect security incidents.
@@ -71,7 +71,7 @@ output {
 ## Logical Diagram
 A logical diagram was created to showcase the data flow from endpoints (Sysmon) to the ELK stack. Data is collected, processed, stored, and visualized in Kibana.
 
-# [2. Brute Force Attack Detection](https://jeremiaheze.github.io/BruteAttackDetect.github.io/)
+# [2.Brute Force Attack Detection](https://jeremiaheze.github.io/BruteAttackDetect.github.io/)
 
 ## Kibana Alerts for Brute Force Attacks
 
