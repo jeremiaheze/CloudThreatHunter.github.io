@@ -10,7 +10,7 @@ This project demonstrates **how to detect and investigate brute force and malwar
 *   **Tools Used: ELK (Elasticsearch, Logstash, Kibana), Mythic C2, Sysmon, Ticketing System**
 *   **Key Skills: SIEM setup, log ingestion, threat detection, incident response, dashboard creation, alert configuration**
 
-# 1. ELK Setup and Sysmon Log Ingestion
+# 1.) [ELK Setup and Sysmon Log Ingestion](https://jeremiaheze.github.io/ELK.github.io/)
 
 ## ELK Stack Installation Confirmation
 To set up the ELK stack, we installed Elasticsearch, Logstash, and Kibana on a Vultr server. These tools allow us to centralize, analyze, and visualize logs from multiple endpoints. Sysmon logs were collected to detect security incidents.
@@ -71,7 +71,7 @@ output {
 ## Logical Diagram
 A logical diagram was created to showcase the data flow from endpoints (Sysmon) to the ELK stack. Data is collected, processed, stored, and visualized in Kibana.
 
-# 2. Brute Force Attack Detection
+# 2.) [Brute Force Attack Detection](https://jeremiaheze.github.io/BruteAttackDetect.github.io/)
 
 ## Kibana Alerts for Brute Force Attacks
 
@@ -105,7 +105,7 @@ Kibana Alert for SSH Brute Force:
 ## Brute Force Activity Dashboard in Kibana
 A custom dashboard was created in Kibana to visualize failed login attempts. This dashboard showed attack frequency, IP addresses involved, and success/failure rates.
 
-# 3. Command and Control (C2) Attack Detection
+# 3.) [Command and Control (C2) Attack Detection](https://jeremiaheze.github.io/C2Detect.github.io/)
 
 ## Mythic C2 Server Setup
 For the Command and Control (C2) simulation, a Mythic C2 server was deployed to simulate communication between the attacker’s machine and compromised endpoints. This allowed us to generate malicious traffic for detection.
@@ -122,7 +122,7 @@ The ELK stack was configured to collect and monitor logs related to C2 communica
 ## Kibana Dashboard Visualizing C2 Activity
 A dashboard was set up to visualize C2 activity by tracking unusual outbound connections, DNS requests, and data exfiltration attempts. This dashboard provided a detailed view of all suspicious C2-related activities.
 
-# 4. Ticketing System Integration
+# 4.) [Ticketing System Integration](https://jeremiaheze.github.io/TicketSystem.github.io/)
 
 ## Ticket Creation from Kibana Alerts
 When a security alert was triggered (e.g., brute force or C2 activity), the system automatically created a ticket in the ticketing system to ensure the incident was tracked and handled by the security team.
