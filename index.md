@@ -2,7 +2,7 @@
 layout: default
 ---
 
-This project demonstrates **how to detect and investigate brute force and malware attacks** using a cloud-based environment. The project was hosted on **Vultr**, where I set up an `ELK stack (Elasticsearch, Logstash, Kibana)`, performed _attacks_, and configured automated _alerts_ and _dashboards_ to monitor activity.
+This project demonstrates **how to detect and investigate brute force and malware attacks** using a cloud-based environment. The project was hosted on `Vultr`, where I set up an `ELK stack (Elasticsearch, Logstash, Kibana)`, performed _attacks_, and configured automated _alerts_ and _dashboards_ to monitor activity.
 
 ### Overview
 
