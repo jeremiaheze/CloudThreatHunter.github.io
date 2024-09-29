@@ -125,7 +125,7 @@ A dashboard was set up to visualize C2 activity by tracking unusual outbound con
 # [4. Ticketing System Integration](https://jeremiaheze.github.io/TicketSystem.github.io/)
 
 ## Ticket Creation from Kibana Alerts
-When a security alert was triggered (e.g., brute force or C2 activity), the system automatically created a ticket in the ticketing system to ensure the incident was tracked and handled by the security team.
+> When a security alert was triggered (e.g., brute force or C2 activity), the system automatically created a ticket in the ticketing system to ensure the incident was tracked and handled by the security team.
 
 Sample Kibana Alert Configuration (automating ticket creation):
 ```json
