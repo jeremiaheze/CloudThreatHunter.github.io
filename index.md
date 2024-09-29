@@ -105,7 +105,7 @@ Kibana Alert for SSH Brute Force:
 ## Brute Force Activity Dashboard in Kibana
 A custom dashboard was created in Kibana to visualize failed login attempts. This dashboard showed attack frequency, IP addresses involved, and success/failure rates.
 
-# 3.) [Command and Control (C2) Attack Detection](https://jeremiaheze.github.io/C2Detect.github.io/)
+# [3. Command and Control (C2) Attack Detection](https://jeremiaheze.github.io/C2Detect.github.io/)
 
 ## Mythic C2 Server Setup
 For the Command and Control (C2) simulation, a Mythic C2 server was deployed to simulate communication between the attacker’s machine and compromised endpoints. This allowed us to generate malicious traffic for detection.
@@ -122,7 +122,7 @@ The ELK stack was configured to collect and monitor logs related to C2 communica
 ## Kibana Dashboard Visualizing C2 Activity
 A dashboard was set up to visualize C2 activity by tracking unusual outbound connections, DNS requests, and data exfiltration attempts. This dashboard provided a detailed view of all suspicious C2-related activities.
 
-# 4.) [Ticketing System Integration](https://jeremiaheze.github.io/TicketSystem.github.io/)
+# [4. Ticketing System Integration](https://jeremiaheze.github.io/TicketSystem.github.io/)
 
 ## Ticket Creation from Kibana Alerts
 When a security alert was triggered (e.g., brute force or C2 activity), the system automatically created a ticket in the ticketing system to ensure the incident was tracked and handled by the security team.
