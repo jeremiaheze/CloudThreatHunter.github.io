@@ -15,7 +15,7 @@ This project demonstrates **how to detect and investigate brute force and malwar
 ## ELK Stack Installation Confirmation
 To set up the ELK stack, we installed Elasticsearch, Logstash, and Kibana on a Vultr server. These tools allow us to centralize, analyze, and visualize logs from multiple endpoints. Sysmon logs were collected to detect security incidents.
 
-Commands for ELK Installation:
+**Commands for ELK Installation:**
 
 ```bash
 # Install Elasticsearch
@@ -38,7 +38,7 @@ sudo systemctl start kibana
 
 Sysmon (System Monitor) was deployed on endpoints to collect detailed system logs, which were then sent to Logstash for processing and forwarded to Elasticsearch for storage. Logs were visualized in Kibana dashboards.
 
-Sysmon Installation:
+**Sysmon Installation:**
 ```powershell
 # Install Sysmon
 Sysmon -accepteula -i sysmonconfig.xml
@@ -47,7 +47,7 @@ Sysmon -accepteula -i sysmonconfig.xml
 Get-Service -Name Sysmon
 ```
 
-Logstash Configuration for Sysmon Logs:
+**Logstash Configuration for Sysmon Logs:**
 ```bash
 # /etc/logstash/conf.d/sysmon.conf
 input {
@@ -77,7 +77,7 @@ A logical diagram was created to showcase the data flow from endpoints (Sysmon) 
 
 To detect brute force attacks, we set up alerts in Kibana to monitor failed login attempts over a certain threshold. The detection was based on log patterns from SSH or RDP brute force attempts.
 
-Kibana Alert for SSH Brute Force:
+**Kibana Alert for SSH Brute Force:**
 ```json
 {
   "trigger": {
@@ -110,7 +110,7 @@ A custom dashboard was created in Kibana to visualize failed login attempts. Thi
 ## Mythic C2 Server Setup
 For the Command and Control (C2) simulation, a Mythic C2 server was deployed to simulate communication between the attacker’s machine and compromised endpoints. This allowed us to generate malicious traffic for detection.
 
-Mythic C2 Installation:
+**Mythic C2 Installation:**
 ```bash
 git clone https://github.com/its-a-feature/Mythic.git
 cd Mythic
@@ -127,7 +127,7 @@ A dashboard was set up to visualize C2 activity by tracking unusual outbound con
 ## Ticket Creation from Kibana Alerts
 > When a security alert was triggered (e.g., brute force or C2 activity), the system automatically created a ticket in the ticketing system to ensure the incident was tracked and handled by the security team.
 
-Sample Kibana Alert Configuration (automating ticket creation):
+**Sample Kibana Alert Configuration (automating ticket creation):**
 ```json
 {
   "trigger": {
