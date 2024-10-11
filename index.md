@@ -155,13 +155,6 @@ The ticketing system displayed a list of active tickets, categorized by priority
 
 
 
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
 
